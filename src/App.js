@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+var personalMen = document.getElementById('personalMen');
+var plusMen = document.getElementById('plusMen');
+var personalDe = document.getElementById('personalDe');
+var plusDe = document.getElementById('plusDe');
+
+
+personalMen.addEventListener("click", showMenu1);
+
+function showMenu1() {
+  if(personalDe.style.display === "none") {
+    personalDe.style.display = "block";
+  } else {
+    personalDe.style.display = "none"
+  }  
 }
 
-export default App;
+plusMen.addEventListener("click", showMenu2);
+
+function showMenu2() {
+  if(plusDe.style.display === "none") {
+    plusDe.style.display = "block";
+  } else {
+    plusDe.style.display = "none"
+  }  
+}
+
+var indiv = document.getElementById('indiv');
+var indivDe = document.getElementById('indivDe');
+
+indiv.addEventListener("click", showMenu3);
+
+function showMenu3() {
+  if(indivDe.style.display === "none") {
+    indivDe.style.display = "block";
+  } else {
+    indivDe.style.display = "none"
+  }
+}
